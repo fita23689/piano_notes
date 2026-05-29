@@ -1,0 +1,52 @@
+# ============================================================
+# Git ignore for piano_notes
+# 仅追踪 notes_md/ 和 notes_pdf/ 两个核心目录
+# ============================================================
+
+# --- 根目录的开发/调试脚本 ---
+batch_md2pdf.py
+batch_pdf.py
+batch_fetch_subs.ps1
+extract_ep02.py
+extract_transcript.py
+vtt_to_txt.py
+vtt_to_txt_v2.py
+vtt_to_txt_v3.py
+rename_files.py
+rename_files.ps1
+_diag.py
+_test_pdf.py
+_test_pdf2.py
+_test_pdf3.py
+_test_v2.py
+
+# --- 旧版/废弃文件 ---
+ep01_zh.md
+ep01_zh.pdf
+ep01_zh_v2.md
+_test.pdf
+
+# --- 中间产物目录 ---
+_diag/
+notes_pdf/*.html
+
+# --- 字幕原始素材（YouTube auto-captions, 体积大且非项目核心产出）---
+transcripts/
+
+# --- 通用忽略 ---
+*.log
+*.tmp
+*.bak
+__pycache__/
+.DS_Store
+Thumbs.db
+node_modules/
+.vscode/
+.idea/
+
+# --- 安全：永远不上传 ---
+cookies.txt
+*.cookies
+.env
+.env.local
+secrets.json
